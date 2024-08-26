@@ -1,0 +1,48 @@
+<odoo>
+
+    <!-- Vista de Árbol -->
+    <record id="view_tree_fabricacervezasmario_contacto" model="ir.ui.view">
+        <field name="name">fabricacervezasmario.contacto.tree</field>
+        <field name="model">fabricacervezasmario.contacto</field>
+        <field name="arch" type="xml">
+            <tree string="Contactos">
+                <field name="nombre"/>
+                <field name="cargo"/>
+                <field name="email"/>
+		<field name="telefono"/>
+		<field name="cliente_id"/>		
+	    </tree>
+        </field>
+    </record>
+    
+    <!-- Vista de Formulario -->
+    <record id="view_form_fabricacervezasmario_contacto" model="ir.ui.view">
+        <field name="name">fabricacervezasmario.contacto.form</field>
+        <field name="model">fabricacervezasmario.contacto</field>
+        <field name="arch" type="xml">
+            <form string="Contacto">
+                <sheet>
+                    <group>
+                        <field name="nombre"/>
+                        <field name="cargo"/>
+                        <field name="email"/>
+                        <field name="telefono"/>                        
+                        <field name="cliente_id"/>
+		    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+    
+    <!-- Acción -->
+    <record id="action_fabricacervezasmario_contacto" model="ir.actions.act_window">
+        <field name="name">Contactos</field>
+        <field name="res_model">fabricacervezasmario.contacto</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+    
+    <!-- Menú y Submenú -->
+    <menuitem id="menu_fabricacervezasmario_contacto" name="Contactos" parent="menu_fabricacervezasmario_root" sequence="3"/>
+    <menuitem id="submenu_fabricacervezasmario_contacto" name="Contactos" parent="menu_fabricacervezasmario_contacto" action="action_fabricacervezasmario_contacto"/>
+    
+</odoo>

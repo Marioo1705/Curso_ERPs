@@ -1,0 +1,50 @@
+<odoo>
+
+    <!-- Vista de Árbol -->
+    <record id="view_tree_fabricacervezasmario_venta" model="ir.ui.view">
+        <field name="name">fabricacervezasmario.venta.tree</field>
+        <field name="model">fabricacervezasmario.venta</field>
+        <field name="arch" type="xml">
+            <tree string="Ventas">
+                <field name="fecha"/>
+                <field name="cliente_id"/>
+                <field name="numero_pedido"/>                
+                <field name="stockcerveza_id"/>
+                <field name="cantidad"/>
+                <field name="precio_total"/>
+            </tree>
+        </field>
+    </record>
+    
+    <!-- Vista de Formulario -->
+    <record id="view_form_fabricacervezasmario_venta" model="ir.ui.view">
+        <field name="name">fabricacervezasmario.venta.form</field>
+        <field name="model">fabricacervezasmario.venta</field>
+        <field name="arch" type="xml">
+            <form string="Venta">
+                <sheet>
+                    <group>
+                        <field name="fecha"/>
+                        <field name="cliente_id"/>
+                        <field name="numero_pedido"/>                	
+                	<field name="stockcerveza_id"/>
+                	<field name="cantidad"/>
+                	<field name="precio_total"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+    
+    <!-- Acción -->
+    <record id="action_fabricacervezasmario_venta" model="ir.actions.act_window">
+        <field name="name">Ventas</field>
+        <field name="res_model">fabricacervezasmario.venta</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+    
+    <!-- Menú y Submenú -->
+    <menuitem id="menu_fabricacervezasmario_venta" name="Ventas" parent="menu_fabricacervezasmario_root" sequence="7"/>
+    <menuitem id="submenu_fabricacervezasmario_venta" name="Ventas" parent="menu_fabricacervezasmario_venta" action="action_fabricacervezasmario_venta"/>
+    
+</odoo>

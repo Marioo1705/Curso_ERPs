@@ -1,0 +1,50 @@
+<odoo>
+
+    <!-- Vista de Árbol -->
+    <record id="view_tree_fabricacervezasmario_stockcerveza" model="ir.ui.view">
+        <field name="name">fabricacervezasmario.stockcerveza.tree</field>
+        <field name="model">fabricacervezasmario.stockcerveza</field>
+        <field name="arch" type="xml">
+            <tree string="Stock">
+                <field name="codigo"/>
+                <field name="tipocerveza_id"/>
+                <field name="formatocerveza_id"/>
+                <field name="ubicacion"/>
+                <field name="stock"/>
+                <field name="precio"/>
+            </tree>
+        </field>
+    </record>
+    
+    <!-- Vista de Formulario -->
+    <record id="view_form_fabricacervezasmario_stockcerveza" model="ir.ui.view">
+        <field name="name">fabricacervezasmario.stockcerveza.form</field>
+        <field name="model">fabricacervezasmario.stockcerveza</field>
+        <field name="arch" type="xml">
+            <form string="Stock">
+                <sheet>
+                    <group>
+                        <field name="codigo"/>
+                        <field name="tipocerveza_id"/>
+                	<field name="formatocerveza_id"/>
+                	<field name="ubicacion"/>
+                	<field name="stock"/>
+                	<field name="precio"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+    
+    <!-- Acción -->
+    <record id="action_fabricacervezasmario_stockcerveza" model="ir.actions.act_window">
+        <field name="name">Stock</field>
+        <field name="res_model">fabricacervezasmario.stockcerveza</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+    
+    <!-- Menú y Submenú -->
+    <menuitem id="menu_fabricacervezasmario_stockcerveza" name="Stock" parent="menu_fabricacervezasmario_root" sequence="6"/>
+    <menuitem id="submenu_fabricacervezasmario_stockcerveza" name="Stock" parent="menu_fabricacervezasmario_stockcerveza" action="action_fabricacervezasmario_stockcerveza"/>
+    
+</odoo>

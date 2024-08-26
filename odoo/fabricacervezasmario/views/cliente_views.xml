@@ -1,0 +1,101 @@
+<odoo>
+
+    <!-- Vista de Árbol -->
+    <record id="view_tree_fabricacervezasmario_cliente" model="ir.ui.view">
+        <field name="name">fabricacervezasmario.cliente.tree</field>
+        <field name="model">fabricacervezasmario.cliente</field>
+        <field name="arch" type="xml">
+            <tree string="Clientes">
+                <field name="codigo"/>
+                <field name="razon_social"/>
+                <field name="nombre_comercial"/>
+		<field name="nif"/>
+                <field name="direccion"/>
+		<field name="poblacion"/>
+                <field name="provincia"/>
+		<field name="codigo_postal"/>
+                <field name="email"/>
+		<field name="telefono"/>
+		<field name="descuento"/>
+                <field name="comercial"/>
+                <field name="activo"/>
+            </tree>
+        </field>
+    </record>
+    
+    <!-- Vista de Formulario -->
+    <record id="view_form_fabricacervezasmario_cliente" model="ir.ui.view">
+        <field name="name">fabricacervezasmario.cliente.form</field>
+        <field name="model">fabricacervezasmario.cliente</field>
+        <field name="arch" type="xml">
+            <form string="Cliente">
+                <sheet>
+                    <group>
+                         <field name="codigo"/>
+                         <field name="razon_social"/>
+               		 <field name="nombre_comercial"/>
+               		 <field name="nif"/>
+               		 <field name="direccion"/>
+               		 <field name="poblacion"/>
+               		 <field name="provincia"/>
+               		 <field name="codigo_postal"/>
+               		 <field name="email"/>
+               		 <field name="telefono"/>
+               		 <field name="descuento"/>
+               		 <field name="comercial"/>
+               		 <field name="activo"/>
+                    </group>
+                    
+		    <notebook> 
+		         <page string="Contactos"> 
+		              <field name="contacto_ids"> 
+		                   <tree string="Contactos"> 
+		                        <field name="nombre"/> 
+		                        <field name="cargo"/> 
+		                        <field name="email"/>
+		                        <field name="telefono"/>
+           			   </tree> 
+		              </field> 
+		         </page>
+		         <page string="Datos de facturación">
+		              <group>
+		                   <field name="riesgo"/>
+		                   <field name="forma_pago"/>
+		                   <field name="plazo_pago"/>
+		                   <field name="dia_pago"/>
+		              </group>
+		         </page>
+		         <page string="Observaciones">
+		              <field name="observaciones"/>
+		         </page> 
+		         <page string="Ventas">
+		              <field name="venta_ids" readonly="1">
+                	           <tree string="Ventas">
+                	                <field name="fecha"/>
+                	                <field name="numero_pedido"/>
+                	                <field name="stockcerveza_id"/>
+                	                <field name="cantidad"/>
+                	                <field name="precio_total"/>
+                	           </tree>
+                	      </field> 
+                	 </page>  
+		    </notebook>
+		    
+                </sheet>
+            </form>
+        </field>
+    </record>
+    
+    <!-- Acción -->
+    <record id="action_fabricacervezasmario_cliente" model="ir.actions.act_window">
+        <field name="name">Clientes</field>
+        <field name="res_model">fabricacervezasmario.cliente</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+    
+    <!-- Menú y Submenú -->
+    <menuitem id="menu_fabricacervezasmario_root" name="Gestión de Cervezas Mario" sequence="1"/>
+    <menuitem id="menu_fabricacervezasmario_cliente" name="Clientes" parent="menu_fabricacervezasmario_root" sequence="2"/>
+    <menuitem id="submenu_fabricacervezasmario_cliente" name="Clientes" parent="menu_fabricacervezasmario_cliente" action="action_fabricacervezasmario_cliente"/>
+    
+</odoo>
