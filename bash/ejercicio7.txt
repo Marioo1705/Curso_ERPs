@@ -1,0 +1,3 @@
+El script busca una cadena de texto específica ("texto a buscar") en todos los archivos con extensión .txt dentro de un directorio dado ("ruta/al/directorio").
+
+Para cada archivo que contiene la cadena de texto, muestra el nombre del archivo y las líneas donde aparece la cadena de texto.
