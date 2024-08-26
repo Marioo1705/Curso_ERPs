@@ -1,1 +1,1 @@
-Este repositorio contiene ejerciciosrealizados durante el curso de administración y programación de ERPs
+Este repositorio contiene ejercicios realizados durante el curso de administración y programación de ERPs
