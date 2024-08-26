@@ -2,6 +2,8 @@
 
 Este directorio contiene una colección de ejercicios de bases de datos realizados en pgAdmin4, así como de diagramas E/R realizados en dia.
 
+NOTA: Necesitas descargarte DIA para poder visualizar los archivos .dia
+
 ## Lista de ejercicios
 
 ### Ejercicio 1:
