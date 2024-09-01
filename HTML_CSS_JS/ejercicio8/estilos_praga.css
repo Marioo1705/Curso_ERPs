@@ -1,0 +1,225 @@
+/* body */
+body { 
+    font-family: 'Montserrat';
+    font-size: calc(0.4em + 1vw);
+    line-height: 1.5em;
+    padding: 1em;    
+    margin: 1em;
+    text-align: justify;
+}
+/* Header y nav */
+.beginning {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5em;
+}
+.navbar-brand {
+    width: 15em;
+}
+/* carrusel index */
+.carousel-inner h2.tittle {
+    font-family: 'Playball';
+    font-size: 8em;
+    text-align: center;
+}
+/* section */
+h3.header-text {
+    font-size: calc(2em + 1vw);
+    color: #46be96;
+    text-align: center;
+    margin-top: 0.5em;
+}
+/* video youtube index */
+.video-prague {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+iframe {
+    width: 30em;
+    height: 17em;
+    margin-bottom: 0.5em;
+}
+/* footer */
+.footer {
+    background-color: pink;
+    display: flex;
+    flex-direction: column;
+}
+.footer-section {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.social-icon {
+    margin-right: 0.3em;
+    text-decoration: none;
+}
+.social-icon img {
+    height: 50px;
+    width: 50px;
+}
+.footer-copy {
+    text-align: center;
+    margin-top: 0.5em;
+}
+.suscribe-container-form {
+    display: flex;
+    flex-direction: column;
+}
+.footer-secion-title {
+    margin-top: 1em;
+}
+.suscribe-container-input {
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 0.5em;
+}
+.button-primary { 
+    text-decoration: none;
+    color: black;
+    background-color:  #46be96;
+    text-align: center;
+    border-radius: 15px;
+}
+.button-primary:hover {
+    background-color: #9a6fc2;
+    transition: background-color 0.3s ease-in-out;
+}
+/* historia */
+figure.foto-derecha, figure.foto-izquierda {
+    width: 50%;
+    border: thin silver solid;
+    padding: 0.5em;
+}
+figure.foto-derecha {
+    float: right;
+    margin-left: 1em;
+}
+figure.foto-izquierda {
+    float: left;
+    margin-right: 1em;
+}
+figure.foto-derecha figcaption, figure.foto-izquierda figcaption, figure.foto figcaption {
+    text-align: center;
+    font-size: calc(0.4em + 1vw);
+    line-height: 1.5em;
+}
+figure.foto {
+    width: 90%;
+    border: thin silver solid;
+    margin-left: 1em;
+    padding: 0.5em;
+}
+.foto-end {
+    display: flex;
+    justify-content: space-around;
+}
+img.escala {
+    width: 100%;
+}
+.subtittle {
+    font-size: calc(0.5em + 1vw);
+}
+/* qué ver */
+figure.photo {
+    width: 30%;
+    border: thin silver solid;
+    padding: 0.5em;
+}
+figure.photo figcaption {
+    text-align: center;
+    font-size: calc(0.4em + 1vw);
+    line-height: 1.5em;
+}
+img.prague-areas {
+    width: 100%;
+}
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+/* dónde comer */
+.meal {
+    font-size: calc(1em + 1vw);
+    color: #46be96;
+    text-align: center;
+}
+#father-areas-prague {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 1.5em;
+}
+.son1-areas-prague {
+    grid-row: 1;
+    grid-column: 1;
+}
+.son2-areas-prague {
+    grid-row: 1;
+    grid-column: 2;
+}
+.son3-areas-prague {
+    grid-row: 2;
+    grid-column: 1;
+}
+.son4-areas-prague {
+    grid-row: 2;
+    grid-column: 2;
+}
+.son-img {
+    width: 80%;
+}
+.img-restaurant {
+    text-align: center;
+}
+/* contacto */
+p.fill-out {
+    text-align: center;
+}
+.personal {
+    display: flex;
+    flex-direction: column;    
+}
+.personal #name, #email {
+    width: 75%;
+}
+.personal #date {
+    width: 40%;
+}
+.aditional {
+    display: flex;
+    flex-direction: column;
+}
+.aditional #message {
+    width: 75%;
+    height: 12em;
+}
+.languages {
+    width: 30%;
+}
+#mario-form {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 1,5em;
+    justify-content: space-around;
+}
+.butt2 {
+    text-decoration: none;
+    color: black;
+    background-color:  #46be96;
+    text-align: center;
+    border-radius: 15px;
+    
+}
+.butt2:hover {
+    background-color: #9a6fc2;
+    transition: background-color 0.3s ease-in-out;
+}
+.butt {
+    padding: 0,5em;
+    margin-bottom: 1em;
+    text-align: center;
+}

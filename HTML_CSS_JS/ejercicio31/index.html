@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD Firebase</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootswatch@4.5.2/dist/pulse/bootstrap.min.css"
+        integrity="sha384-L7+YG8QLqGvxQGffJ6utDKFwmGwtLcCjtwvonVZR/Ba2VzhpMwBz51GaXnUsuYbj" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <script src="utils.js" type="module" defer></script>
+    <script src="index.js" type="module" defer></script>
+</head>
+<body>
+    <div id="date">
+        <div id="fecha"></div>
+        <h3 id="reloj"></h3>
+    </div>
+    <div id="form-father-container">
+        <div>
+            <img src="bibliotecario.png" alt="" class="image-container">
+        </div>
+        <div id="form-new-container">
+            <div class="card-header">
+                <h5>Formulario Biblioteca</h5>
+            </div>
+            <div class="card-body">
+                <form id="book-form">
+                    <input type="text" id="book-isbn" class="form-control" placeholder="ISBN" required autofocus>
+                    <input type="text" id="book-title" class="form-control" placeholder="Título" required autofocus>
+                    <input type="text" id="book-author" class="form-control" placeholder="Autor" required autofocus>
+                    <input type="text" id="book-editorial" class="form-control" placeholder="Editorial" autofocus>
+                    <input type="text" id="book-pages" class="form-control" placeholder="Número de páginas" autofocus>
+                    <input type="text" id="book-cost" class="form-control" placeholder="Precio" autofocus>
+                    <textarea id="book-genre" class="form-control" placeholder="Género literario" cols="10" rows="5"></textarea>
+                    <br>
+                    <input type="submit" value="Introducir nuevo libro" class="btn btn-lg btn-primary" id="book-button">
+                </form>
+            </div>
+
+        </div>
+        <div id="form-update-container">
+            <div class="card-header">
+                <h5>Actualizar Biblioteca</h5>
+            </div>
+            <div class="card-body">
+                <form id="update-form">
+                    <input type="text" id="update-book-isbn" class="form-control" placeholder="ISBN del libro a actualizar" required autofocus>
+                    <input type="text" id="update-book-title" class="form-control" placeholder="Nuevo título" autofocus>
+                    <input type="text" id="update-book-author" class="form-control" placeholder="Nuevo autor" autofocus>
+                    <input type="text" id="update-book-editorial" class="form-control" placeholder="Nueva editorial" autofocus>
+                    <input type="text" id="update-book-pages" class="form-control" placeholder="Nuevo número de páginas" autofocus>
+                    <input type="text" id="update-book-cost" class="form-control" placeholder="Nuevo precio" autofocus>
+                    <textarea id="update-book-genre" class="form-control" placeholder="Nuevo género literario" cols="10" rows="5"></textarea>
+                    <br>
+                    <input type="submit" value="Actualizar datos libro" class="btn btn-lg btn-primary" id="update-book-button">
+                </form>
+            </div>
+        </div>
+        <div>
+            <img src="biblioteca.png" alt="" class="image-container">
+        </div>
+    </div>
+    <br>
+    <h2>Listado actualizado Bilioteca</h2>
+    <br>
+</body>
+</html>    

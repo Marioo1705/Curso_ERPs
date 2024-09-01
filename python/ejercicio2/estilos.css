@@ -1,0 +1,60 @@
+body {
+    background: rgb(34,193,195);
+    background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
+    padding: 30px;
+}
+h1, h2, h5 {
+    color: white;
+    text-align: center;
+}
+img {
+    width: 450px;
+    height: 450px;
+}
+thead {
+    background-color:  rgb(105, 9, 14);
+}
+tbody {
+    background-color:  rgb(216, 107, 121);
+}
+.tabla-empleados {
+    margin: auto;
+}
+tr, th, td {
+    color: white;
+    border: 1px solid black;
+    padding: 10px;
+    text-align: center;
+    font-size: 1.1em;
+}
+#container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 50px;
+}
+#form1-container, #form2-container, #form3-container, #form4-container {
+    background-color: rgb(216, 107, 121);
+    width: 250px;
+    height: 260px;
+    border-radius: 10px;
+}
+#container-father {
+    display: flex;
+   justify-content: center;
+   flex-wrap: wrap;
+   gap: 100px;
+   margin: 50px 0;
+}
+#select-button, #delete-button, #insert-button, #update-button {
+    display: block;
+    margin: auto;
+    border-radius: 10px;
+}
+#datos-empleado-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 100px;
+}

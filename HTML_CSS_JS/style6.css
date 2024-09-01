@@ -1,0 +1,90 @@
+body {
+    background-color: #f0f0f0; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; 
+    max-width: 800px;
+    padding: 20px;
+    gap: 10px;
+}
+
+.box {
+    background-color: #ffffff;
+    width: 150px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around; 
+    border-radius: 5px;
+    padding: 10px;
+    box-sizing: border-box;
+    text-align: center;
+    border-bottom: 1px solid #000;
+    border-right: 1px solid #000;
+}
+
+.color-square {
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+}
+
+.pantone-label {
+    font-weight: bold;
+    font-size: 20px;
+    
+}
+
+.box p {
+    margin: 0;  
+}
+
+.pantone-2022 {
+    background-color: #6667AB;
+}
+
+.pantone-2021-ultimate-gray {
+    background-color: #939597;
+}
+
+.pantone-2021-illuminating {
+    background-color: #F5DF4D;
+}
+
+.pantone-2020 {
+    background-color: #0F4C81;
+}
+
+.pantone-2019 {
+    background-color: #FF6F61;
+}
+
+.pantone-2018 {
+    background-color: #5F4B8B;
+}
+
+.pantone-2017 {
+    background-color: #88B04B;
+}
+
+.pantone-2016-rose-quartz {
+    background-color: #F7CAC9;
+}
+
+.pantone-2016-serenity {
+    background-color: #92A8D1;
+}
+
+.pantone-2015 {
+    background-color: #955251;
+}
+

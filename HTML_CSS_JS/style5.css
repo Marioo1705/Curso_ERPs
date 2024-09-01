@@ -1,0 +1,10 @@
+h1[id] {color:teal;}
+p strong, p a, tfoot, th[scope="row"] {color: red;}
+.destacado, table .especial, tr strong {color: orange;}
+h2, p a em, caption {color: blue;}
+p .especial {color: purple;}
+tbody td, div p a {color: green;}
+div[id] {color: olive;}
+p #especial {color: fuchsia;}
+table {border-collapse: collapse;}
+th, td {border: 1px solid black;}
